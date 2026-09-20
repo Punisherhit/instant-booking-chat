@@ -10,33 +10,53 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as StaysIndexRouteImport } from './routes/stays.index'
+import { Route as StaysSlugRouteImport } from './routes/stays.$slug'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const StaysIndexRoute = StaysIndexRouteImport.update({
+  id: '/stays/',
+  path: '/stays/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StaysSlugRoute = StaysSlugRouteImport.update({
+  id: '/stays/$slug',
+  path: '/stays/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/stays/': typeof StaysIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/stays': typeof StaysIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/stays/$slug': typeof StaysSlugRoute
+  '/stays/': typeof StaysIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/stays/$slug' | '/stays/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/stays/$slug' | '/stays'
+  id: '__root__' | '/' | '/stays/$slug' | '/stays/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  StaysSlugRoute: typeof StaysSlugRoute
+  StaysIndexRoute: typeof StaysIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +68,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/stays/': {
+      id: '/stays/'
+      path: '/stays'
+      fullPath: '/stays/'
+      preLoaderRoute: typeof StaysIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/stays/$slug': {
+      id: '/stays/$slug'
+      path: '/stays/$slug'
+      fullPath: '/stays/$slug'
+      preLoaderRoute: typeof StaysSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  StaysSlugRoute: StaysSlugRoute,
+  StaysIndexRoute: StaysIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
