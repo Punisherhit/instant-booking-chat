@@ -3,11 +3,11 @@ import { DESTINATIONS, STAYS } from "@/data/catalogue";
 import { StayCard } from "@/components/cards";
 
 type StaysSearch = {
-  destination?: string;
-  type?: string;
-  guests?: number;
-  maxPrice?: number;
-  sort?: string;
+  destination?: string | undefined;
+  type?: string | undefined;
+  guests?: number | undefined;
+  maxPrice?: number | undefined;
+  sort?: string | undefined;
 };
 
 export const Route = createFileRoute("/stays/")({
