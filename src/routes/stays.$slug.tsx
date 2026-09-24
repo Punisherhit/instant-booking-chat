@@ -35,7 +35,7 @@ function StayDetail() {
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
-  const [roomType, setRoomType] = useState(stay.roomTypes[0].name);
+  const [roomType, setRoomType] = useState(stay.roomTypes[0]?.name ?? "");
   const [reference] = useState(() => makeReference());
 
   const link = bookingEnquiryLink({

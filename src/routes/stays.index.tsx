@@ -12,11 +12,11 @@ type StaysSearch = {
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: (search: Record<string, unknown>): StaysSearch => ({
-    destination: typeof search.destination === "string" ? search.destination : undefined,
-    type: typeof search.type === "string" ? search.type : undefined,
-    guests: search.guests ? Number(search.guests) : undefined,
-    maxPrice: search.maxPrice ? Number(search.maxPrice) : undefined,
-    sort: typeof search.sort === "string" ? search.sort : undefined,
+    destination: typeof search["destination"] === "string" ? (search["destination"] as string) : undefined,
+    type: typeof search["type"] === "string" ? (search["type"] as string) : undefined,
+    guests: search["guests"] ? Number(search["guests"]) : undefined,
+    maxPrice: search["maxPrice"] ? Number(search["maxPrice"]) : undefined,
+    sort: typeof search["sort"] === "string" ? (search["sort"] as string) : undefined,
   }),
   head: () => ({
     meta: [
