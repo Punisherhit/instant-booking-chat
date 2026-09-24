@@ -40,7 +40,7 @@ const TYPES = ["Villa", "Apartment", "B&B", "Hotel"];
 
 function StaysPage() {
   const search = Route.useSearch();
-  const navigate = useNavigate({ from: "/stays" });
+  const navigate = useNavigate({ from: "/stays/" });
 
   const update = (patch: Partial<StaysSearch>) =>
     navigate({ search: (prev) => ({ ...prev, ...patch }) });
