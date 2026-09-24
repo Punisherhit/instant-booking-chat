@@ -1,11 +1,12 @@
 // Central MASHA ELITE site configuration.
-// TODO: replace with the official MASHA ELITE business WhatsApp number
-// (international format, no "+" or spaces) before launch.
-export const WHATSAPP_NUMBER = "254700000000";
+// Official MASHA ELITE business WhatsApp number (+254 745 592258),
+// international format without "+" or spaces.
+export const WHATSAPP_NUMBER = "254745592258";
 
 export const SITE_NAME = "MASHA ELITE";
 export const SITE_TAGLINE = "Discover. Stay. Explore.";
-export const SITE_EMAIL = "hello@mashaelite.co.ke";
+export const SITE_EMAIL = "Mashaelitebookings@gmail.com";
+export const SITE_PHONE = "0720791414";
 
 /** Build a wa.me click-to-chat link with a prefilled, URL-encoded message. */
 export function whatsappLink(message: string): string {
