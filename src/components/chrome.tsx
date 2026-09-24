@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { generalEnquiryLink, SITE_NAME } from "@/lib/site";
+import { generalEnquiryLink, SITE_EMAIL, SITE_NAME, SITE_PHONE } from "@/lib/site";
 
 const NAV = [
   { to: "/stays", label: "Stays" },
