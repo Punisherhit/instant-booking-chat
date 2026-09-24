@@ -13,10 +13,10 @@ export const Route = createFileRoute("/stays/$slug")({
   },
   head: ({ loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Stay not found — MASH ELITE" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Stay not found — MASHA ELITE" }, { name: "robots", content: "noindex" }] };
     }
     const { stay } = loaderData;
-    const title = `${stay.name}, ${stay.location} — MASH ELITE`;
+    const title = `${stay.name}, ${stay.location} — MASHA ELITE`;
     return {
       meta: [
         { title },
@@ -35,7 +35,7 @@ function StayDetail() {
   const [checkOut, setCheckOut] = useState("");
   const [adults, setAdults] = useState(2);
   const [children, setChildren] = useState(0);
-  const [roomType, setRoomType] = useState(stay.roomTypes[0].name);
+  const [roomType, setRoomType] = useState(stay.roomTypes[0]?.name ?? "");
   const [reference] = useState(() => makeReference());
 
   const link = bookingEnquiryLink({
@@ -71,7 +71,7 @@ function StayDetail() {
             <h1 className="font-display text-4xl font-semibold">{stay.name}</h1>
             {stay.managed && (
               <span className="rounded-full bg-primary px-3 py-1 text-xs font-semibold text-primary-foreground">
-                MASH ELITE managed
+                MASHA ELITE managed
               </span>
             )}
           </div>

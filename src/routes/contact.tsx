@@ -1,17 +1,17 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { WhatsAppIcon } from "@/components/chrome";
-import { generalEnquiryLink, serviceEnquiryLink, SITE_EMAIL } from "@/lib/site";
+import { generalEnquiryLink, serviceEnquiryLink, SITE_EMAIL, SITE_PHONE } from "@/lib/site";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact MASH ELITE" },
+      { title: "Contact MASHA ELITE" },
       {
         name: "description",
         content:
-          "Reach MASH ELITE on WhatsApp for bookings, property viewings, tours and transfers along the Kenyan coast.",
+          "Reach MASHA ELITE on WhatsApp for bookings, property viewings, tours and transfers along the Kenyan coast.",
       },
-      { property: "og:title", content: "Contact MASH ELITE" },
+      { property: "og:title", content: "Contact MASHA ELITE" },
       { property: "og:description", content: "Bookings, viewings and travel questions — WhatsApp is fastest." },
     ],
   }),
@@ -60,10 +60,22 @@ function ContactPage() {
         ))}
       </div>
 
-      <p className="mt-10 text-sm text-muted-foreground">
-        Prefer email? Write to <span className="font-medium text-foreground">{SITE_EMAIL}</span>. We reply during
-        business hours, East Africa Time.
-      </p>
+      <div className="mt-10 space-y-2 text-sm text-muted-foreground">
+        <p>
+          Call or WhatsApp us on{" "}
+          <a href={`tel:+254745592258`} className="font-medium text-foreground">
+            +254 745 592258
+          </a>{" "}
+          or <span className="font-medium text-foreground">{SITE_PHONE}</span>.
+        </p>
+        <p>
+          Prefer email? Write to{" "}
+          <a href={`mailto:${SITE_EMAIL}`} className="font-medium text-foreground">
+            {SITE_EMAIL}
+          </a>
+          . We reply during business hours, East Africa Time.
+        </p>
+      </div>
     </div>
   );
 }

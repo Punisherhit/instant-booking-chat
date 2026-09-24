@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Notice — MASH ELITE" },
-      { name: "description", content: "How MASH ELITE collects, uses and protects your personal information." },
-      { property: "og:title", content: "Privacy Notice — MASH ELITE" },
-      { property: "og:description", content: "How MASH ELITE collects, uses and protects your personal information." },
+      { title: "Privacy Notice — MASHA ELITE" },
+      { name: "description", content: "How MASHA ELITE collects, uses and protects your personal information." },
+      { property: "og:title", content: "Privacy Notice — MASHA ELITE" },
+      { property: "og:description", content: "How MASHA ELITE collects, uses and protects your personal information." },
     ],
   }),
   component: PrivacyPage,
@@ -18,7 +18,7 @@ function PrivacyPage() {
       <h1 className="font-display text-4xl font-semibold">Privacy notice</h1>
       <div className="mt-6 space-y-6 text-sm leading-relaxed text-muted-foreground">
         <p>
-          MASH ELITE collects only the information needed to handle your inquiry or booking: your name, contact
+          MASHA ELITE collects only the information needed to handle your inquiry or booking: your name, contact
           details, travel dates, party size and any preferences you share with us.
         </p>
         <p>

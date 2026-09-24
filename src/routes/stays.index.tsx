@@ -12,21 +12,21 @@ type StaysSearch = {
 
 export const Route = createFileRoute("/stays/")({
   validateSearch: (search: Record<string, unknown>): StaysSearch => ({
-    destination: typeof search.destination === "string" ? search.destination : undefined,
-    type: typeof search.type === "string" ? search.type : undefined,
-    guests: search.guests ? Number(search.guests) : undefined,
-    maxPrice: search.maxPrice ? Number(search.maxPrice) : undefined,
-    sort: typeof search.sort === "string" ? search.sort : undefined,
+    destination: typeof search["destination"] === "string" ? (search["destination"] as string) : undefined,
+    type: typeof search["type"] === "string" ? (search["type"] as string) : undefined,
+    guests: search["guests"] ? Number(search["guests"]) : undefined,
+    maxPrice: search["maxPrice"] ? Number(search["maxPrice"]) : undefined,
+    sort: typeof search["sort"] === "string" ? (search["sort"] as string) : undefined,
   }),
   head: () => ({
     meta: [
-      { title: "Stays on the Kenyan Coast — MASH ELITE" },
+      { title: "Stays on the Kenyan Coast — MASHA ELITE" },
       {
         name: "description",
         content:
           "Search villas, apartments, B&Bs and hotels in Malindi, Watamu, Kilifi, Vipingo and Diani. Filter by dates, guests and price, then book on WhatsApp.",
       },
-      { property: "og:title", content: "Stays on the Kenyan Coast — MASH ELITE" },
+      { property: "og:title", content: "Stays on the Kenyan Coast — MASHA ELITE" },
       {
         property: "og:description",
         content: "Villas, apartments, B&Bs and hotels across Kenya's north coast. Book on WhatsApp.",
@@ -40,7 +40,7 @@ const TYPES = ["Villa", "Apartment", "B&B", "Hotel"];
 
 function StaysPage() {
   const search = Route.useSearch();
-  const navigate = useNavigate({ from: "/stays" });
+  const navigate = useNavigate({ from: "/stays/" });
 
   const update = (patch: Partial<StaysSearch>) =>
     navigate({ search: (prev) => ({ ...prev, ...patch }) });

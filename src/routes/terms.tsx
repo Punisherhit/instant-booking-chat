@@ -3,10 +3,10 @@ import { createFileRoute } from "@tanstack/react-router";
 export const Route = createFileRoute("/terms")({
   head: () => ({
     meta: [
-      { title: "Terms & Conditions — MASH ELITE" },
-      { name: "description", content: "Booking, payment and cancellation terms for MASH ELITE services." },
-      { property: "og:title", content: "Terms & Conditions — MASH ELITE" },
-      { property: "og:description", content: "Booking, payment and cancellation terms for MASH ELITE services." },
+      { title: "Terms & Conditions — MASHA ELITE" },
+      { name: "description", content: "Booking, payment and cancellation terms for MASHA ELITE services." },
+      { property: "og:title", content: "Terms & Conditions — MASHA ELITE" },
+      { property: "og:description", content: "Booking, payment and cancellation terms for MASHA ELITE services." },
     ],
   }),
   component: TermsPage,
@@ -19,7 +19,7 @@ function TermsPage() {
       <div className="mt-6 space-y-6 text-sm leading-relaxed text-muted-foreground">
         <p>
           A message sent through this website or WhatsApp is a booking inquiry, not a confirmed reservation. A booking
-          is confirmed only when MASH ELITE confirms availability and the agreed payment conditions are met.
+          is confirmed only when MASHA ELITE confirms availability and the agreed payment conditions are met.
         </p>
         <p>
           Rates shown on this website are indicative. The final price for your dates, party size and room type is

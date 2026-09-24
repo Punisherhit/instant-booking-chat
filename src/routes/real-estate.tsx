@@ -7,13 +7,13 @@ import { serviceEnquiryLink } from "@/lib/site";
 export const Route = createFileRoute("/real-estate")({
   head: () => ({
     meta: [
-      { title: "Property for Sale on the Kenyan Coast — MASH ELITE" },
+      { title: "Property for Sale on the Kenyan Coast — MASHA ELITE" },
       {
         name: "description",
         content:
           "Beachfront villas, townhouses and apartments for sale in Kilifi, Malindi, Vipingo and Watamu. Arrange a viewing on WhatsApp.",
       },
-      { property: "og:title", content: "Property for Sale on the Kenyan Coast — MASH ELITE" },
+      { property: "og:title", content: "Property for Sale on the Kenyan Coast — MASHA ELITE" },
       {
         property: "og:description",
         content: "Authorized coastal property listings with guided viewings arranged on WhatsApp.",

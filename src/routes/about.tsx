@@ -4,13 +4,13 @@ import heroImage from "@/assets/hero-malindi.jpg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About MASH ELITE" },
+      { title: "About MASHA ELITE" },
       {
         name: "description",
         content:
-          "MASH ELITE is a property management company and coastal marketplace covering accommodation, real estate, tours and transport in Kenya.",
+          "MASHA ELITE is a property management company and coastal marketplace covering accommodation, real estate, tours and transport in Kenya.",
       },
-      { property: "og:title", content: "About MASH ELITE" },
+      { property: "og:title", content: "About MASHA ELITE" },
       {
         property: "og:description",
         content: "Property management and a coastal marketplace across Malindi, Watamu, Kilifi and Vipingo.",
@@ -27,12 +27,12 @@ function AboutPage() {
         <img src={heroImage} alt="Kenyan coast" width={1920} height={1088} className="h-[42vh] min-h-[300px] w-full object-cover" />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="font-display text-4xl font-semibold text-primary-foreground sm:text-5xl">About MASH ELITE</h1>
+          <h1 className="font-display text-4xl font-semibold text-primary-foreground sm:text-5xl">About MASHA ELITE</h1>
         </div>
       </section>
       <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6">
         <p className="text-lg leading-relaxed">
-          MASH ELITE is a property management company and public accommodation marketplace on Kenya's north coast. We
+          MASHA ELITE is a property management company and public accommodation marketplace on Kenya's north coast. We
           manage our own properties and carefully authorized third-party listings, and we connect guests, buyers and
           travellers through one team.
         </p>

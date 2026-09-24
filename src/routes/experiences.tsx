@@ -5,13 +5,13 @@ import { ExperienceCard } from "@/components/cards";
 export const Route = createFileRoute("/experiences")({
   head: () => ({
     meta: [
-      { title: "Tours & Experiences — MASH ELITE" },
+      { title: "Tours & Experiences — MASHA ELITE" },
       {
         name: "description",
         content:
           "Dhow cruises in Watamu, Tsavo East safaris, marine park snorkelling and more. Book coastal experiences on WhatsApp.",
       },
-      { property: "og:title", content: "Tours & Experiences — MASH ELITE" },
+      { property: "og:title", content: "Tours & Experiences — MASHA ELITE" },
       {
         property: "og:description",
         content: "Coast and safari experiences with qualified local partners. Book on WhatsApp.",
