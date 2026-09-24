@@ -6,16 +6,16 @@ import { serviceEnquiryLink } from "@/lib/site";
 export const Route = createFileRoute("/list-your-property")({
   head: () => ({
     meta: [
-      { title: "List Your Property — MASH ELITE" },
+      { title: "List Your Property — MASHA ELITE" },
       {
         name: "description",
         content:
-          "Apply to list your villa, apartment, B&B or hotel with MASH ELITE. We handle listings, bookings and guest communication.",
+          "Apply to list your villa, apartment, B&B or hotel with MASHA ELITE. We handle listings, bookings and guest communication.",
       },
-      { property: "og:title", content: "List Your Property — MASH ELITE" },
+      { property: "og:title", content: "List Your Property — MASHA ELITE" },
       {
         property: "og:description",
-        content: "Join the MASH ELITE portfolio — we manage listings, bookings and guests.",
+        content: "Join the MASHA ELITE portfolio — we manage listings, bookings and guests.",
       },
     ],
   }),

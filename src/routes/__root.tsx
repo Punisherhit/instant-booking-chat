@@ -78,13 +78,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MASH ELITE — Discover. Stay. Explore." },
+      { title: "MASHA ELITE — Discover. Stay. Explore." },
       {
         name: "description",
         content:
           "Coastal accommodation, real estate, tours and transfers across Malindi, Watamu, Kilifi and Vipingo, Kenya. Book directly on WhatsApp.",
       },
-      { property: "og:title", content: "MASH ELITE — Discover. Stay. Explore." },
+      { property: "og:title", content: "MASHA ELITE — Discover. Stay. Explore." },
       {
         property: "og:description",
         content:

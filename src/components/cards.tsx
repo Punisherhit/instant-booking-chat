@@ -21,7 +21,7 @@ export function StayCard({ stay }: { stay: Stay }) {
         />
         {stay.managed && (
           <span className="absolute left-3 top-3 rounded-full bg-primary/90 px-3 py-1 text-xs font-semibold text-primary-foreground">
-            MASH ELITE managed
+            MASHA ELITE managed
           </span>
         )}
       </Link>

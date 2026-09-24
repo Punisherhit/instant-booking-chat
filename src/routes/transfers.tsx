@@ -7,13 +7,13 @@ import { serviceEnquiryLink } from "@/lib/site";
 export const Route = createFileRoute("/transfers")({
   head: () => ({
     meta: [
-      { title: "Airport Transfers & Travel — MASH ELITE" },
+      { title: "Airport Transfers & Travel — MASHA ELITE" },
       {
         name: "description",
         content:
           "Airport pickups, inter-town transfers and safari connections across the Kenyan coast. Request a quote on WhatsApp.",
       },
-      { property: "og:title", content: "Airport Transfers & Travel — MASH ELITE" },
+      { property: "og:title", content: "Airport Transfers & Travel — MASHA ELITE" },
       {
         property: "og:description",
         content: "Reliable coastal transfers and travel coordination. Request a quote on WhatsApp.",

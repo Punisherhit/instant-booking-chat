@@ -9,13 +9,13 @@ import { generalEnquiryLink } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MASH ELITE — Coastal Stays, Property & Tours in Kenya" },
+      { title: "MASHA ELITE — Coastal Stays, Property & Tours in Kenya" },
       {
         name: "description",
         content:
           "Find villas, apartments, B&Bs and hotels in Malindi, Watamu, Kilifi and Vipingo. Real estate, safaris and transfers too — book instantly on WhatsApp.",
       },
-      { property: "og:title", content: "MASH ELITE — Coastal Stays, Property & Tours in Kenya" },
+      { property: "og:title", content: "MASHA ELITE — Coastal Stays, Property & Tours in Kenya" },
       {
         property: "og:description",
         content:
@@ -251,7 +251,7 @@ function Home() {
         <div className="rounded-3xl border border-border bg-card p-10 text-center">
           <h2 className="font-display text-3xl font-semibold">Own a property on the coast?</h2>
           <p className="mx-auto mt-3 max-w-2xl text-muted-foreground">
-            Join the MASH ELITE portfolio. We handle listing, guest communication, bookings and reporting so your
+            Join the MASHA ELITE portfolio. We handle listing, guest communication, bookings and reporting so your
             property works harder for you.
           </p>
           <Link

@@ -5,13 +5,13 @@ import { generalEnquiryLink, serviceEnquiryLink, SITE_EMAIL } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact MASH ELITE" },
+      { title: "Contact MASHA ELITE" },
       {
         name: "description",
         content:
-          "Reach MASH ELITE on WhatsApp for bookings, property viewings, tours and transfers along the Kenyan coast.",
+          "Reach MASHA ELITE on WhatsApp for bookings, property viewings, tours and transfers along the Kenyan coast.",
       },
-      { property: "og:title", content: "Contact MASH ELITE" },
+      { property: "og:title", content: "Contact MASHA ELITE" },
       { property: "og:description", content: "Bookings, viewings and travel questions — WhatsApp is fastest." },
     ],
   }),

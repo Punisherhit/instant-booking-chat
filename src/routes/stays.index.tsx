@@ -20,13 +20,13 @@ export const Route = createFileRoute("/stays/")({
   }),
   head: () => ({
     meta: [
-      { title: "Stays on the Kenyan Coast — MASH ELITE" },
+      { title: "Stays on the Kenyan Coast — MASHA ELITE" },
       {
         name: "description",
         content:
           "Search villas, apartments, B&Bs and hotels in Malindi, Watamu, Kilifi, Vipingo and Diani. Filter by dates, guests and price, then book on WhatsApp.",
       },
-      { property: "og:title", content: "Stays on the Kenyan Coast — MASH ELITE" },
+      { property: "og:title", content: "Stays on the Kenyan Coast — MASHA ELITE" },
       {
         property: "og:description",
         content: "Villas, apartments, B&Bs and hotels across Kenya's north coast. Book on WhatsApp.",

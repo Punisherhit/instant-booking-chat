@@ -1,11 +1,11 @@
-// Central MASH ELITE site configuration.
-// TODO: replace with the official MASH ELITE business WhatsApp number
+// Central MASHA ELITE site configuration.
+// TODO: replace with the official MASHA ELITE business WhatsApp number
 // (international format, no "+" or spaces) before launch.
 export const WHATSAPP_NUMBER = "254700000000";
 
-export const SITE_NAME = "MASH ELITE";
+export const SITE_NAME = "MASHA ELITE";
 export const SITE_TAGLINE = "Discover. Stay. Explore.";
-export const SITE_EMAIL = "hello@mashelite.co.ke";
+export const SITE_EMAIL = "hello@mashaelite.co.ke";
 
 /** Build a wa.me click-to-chat link with a prefilled, URL-encoded message. */
 export function whatsappLink(message: string): string {
@@ -14,7 +14,7 @@ export function whatsappLink(message: string): string {
 
 export function generalEnquiryLink(): string {
   return whatsappLink(
-    `Hello MASH ELITE! I'd like to make an inquiry. Please assist. Thank you!`,
+    `Hello MASHA ELITE! I'd like to make an inquiry. Please assist. Thank you!`,
   );
 }
 
@@ -29,9 +29,9 @@ export function bookingEnquiryLink(details: {
   reference: string;
 }): string {
   const lines = [
-    "MASH ELITE Booking Inquiry",
+    "MASHA ELITE Booking Inquiry",
     "",
-    "Hello MASH ELITE! I'd like to inquire about a booking.",
+    "Hello MASHA ELITE! I'd like to inquire about a booking.",
     `Property: ${details.property}`,
     `Location: ${details.location}`,
     `Check-in: ${details.checkIn || "Flexible"}`,
@@ -48,9 +48,9 @@ export function bookingEnquiryLink(details: {
 export function serviceEnquiryLink(service: string, extra?: string): string {
   return whatsappLink(
     [
-      `MASH ELITE ${service} Inquiry`,
+      `MASHA ELITE ${service} Inquiry`,
       "",
-      `Hello MASH ELITE! I'm interested in: ${service}.`,
+      `Hello MASHA ELITE! I'm interested in: ${service}.`,
       extra ?? "",
       "Please share availability, pricing and next steps. Thank you!",
     ]
