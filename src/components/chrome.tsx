@@ -140,7 +140,19 @@ export function Footer() {
             <WhatsAppIcon className="h-4 w-4" />
             WhatsApp us
           </a>
-          <p className="mt-3 text-sm opacity-80">We reply during business hours, EAT.</p>
+          <p className="mt-3 text-sm opacity-80">
+            <a href="tel:+254745592258" className="hover:opacity-100">
+              +254 745 592258
+            </a>
+            {" · "}
+            {SITE_PHONE}
+          </p>
+          <p className="mt-1 text-sm opacity-80">
+            <a href={`mailto:${SITE_EMAIL}`} className="hover:opacity-100">
+              {SITE_EMAIL}
+            </a>
+          </p>
+          <p className="mt-2 text-sm opacity-80">We reply during business hours, EAT.</p>
         </div>
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs opacity-70">
