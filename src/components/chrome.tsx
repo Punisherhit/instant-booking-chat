@@ -1,6 +1,21 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { generalEnquiryLink, SITE_EMAIL, SITE_NAME, SITE_PHONE } from "@/lib/site";
+import { Phone, Mail } from "lucide-react";
+import {
+  generalEnquiryLink,
+  SITE_EMAIL,
+  SITE_NAME,
+  SITE_PHONE,
+  whatsappLink,
+} from "@/lib/site";
+
+const DEVELOPER_WHATSAPP = "254103120054";
+
+function developerWhatsAppLink(): string {
+  return `https://wa.me/${DEVELOPER_WHATSAPP}?text=${encodeURIComponent(
+    "Hello Anthony Deric!",
+  )}`;
+}
 
 const NAV = [
   { to: "/stays", label: "Stays" },
@@ -157,6 +172,36 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10 py-5 text-center text-xs opacity-70">
         © {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+      </div>
+      <div className="border-t border-white/10 py-5 text-center text-xs">
+        <p className="opacity-80">Designed &amp; Developed by{" "}
+          <a
+            href={developerWhatsAppLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-gold transition-opacity hover:opacity-80"
+          >
+            ANTHONY DERIC
+          </a>
+        </p>
+        <p className="mt-2 flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+          <a
+            href={developerWhatsAppLink()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 opacity-80 transition-opacity hover:opacity-100"
+          >
+            <Phone className="h-3.5 w-3.5" />
+            +254 103 120 054
+          </a>
+          <a
+            href="mailto:antondewin457@gmail.com"
+            className="inline-flex items-center gap-1.5 opacity-80 transition-opacity hover:opacity-100"
+          >
+            <Mail className="h-3.5 w-3.5" />
+            antondewin457@gmail.com
+          </a>
+        </p>
       </div>
     </footer>
   );
