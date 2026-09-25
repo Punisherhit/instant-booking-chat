@@ -1,6 +1,19 @@
 import { Link } from "@tanstack/react-router";
 import { useState } from "react";
-import { generalEnquiryLink, SITE_EMAIL, SITE_NAME, SITE_PHONE } from "@/lib/site";
+import { Phone, Mail } from "lucide-react";
+import {
+  generalEnquiryLink,
+  SITE_EMAIL,
+  SITE_NAME,
+  SITE_PHONE,
+  whatsappLink,
+} from "@/lib/site";
+
+const DEVELOPER_WHATSAPP = "254103120054";
+
+function developerWhatsAppLink(): string {
+  return whatsappLink("Hello Anthony Deric!");
+}
 
 const NAV = [
   { to: "/stays", label: "Stays" },
