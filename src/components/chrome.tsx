@@ -12,7 +12,9 @@ import {
 const DEVELOPER_WHATSAPP = "254103120054";
 
 function developerWhatsAppLink(): string {
-  return whatsappLink("Hello Anthony Deric!");
+  return `https://wa.me/${DEVELOPER_WHATSAPP}?text=${encodeURIComponent(
+    "Hello Anthony Deric!",
+  )}`;
 }
 
 const NAV = [
