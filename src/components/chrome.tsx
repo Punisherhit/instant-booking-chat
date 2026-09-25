@@ -189,14 +189,14 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 opacity-80 transition-opacity hover:opacity-100"
           >
-            <PhoneIcon className="h-3.5 w-3.5" />
+            <Phone className="h-3.5 w-3.5" />
             +254 103 120 054
           </a>
           <a
             href="mailto:antondewin457@gmail.com"
             className="inline-flex items-center gap-1.5 opacity-80 transition-opacity hover:opacity-100"
           >
-            <MailIcon className="h-3.5 w-3.5" />
+            <Mail className="h-3.5 w-3.5" />
             antondewin457@gmail.com
           </a>
         </p>
